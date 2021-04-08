@@ -1,0 +1,160 @@
+
+/* On est pas obligé de mettre section# mais juste le # suffit amplement */
+
+body {
+    /* background-color: #F25A29; */
+    background: url(../images/header-section.jpg) no-repeat fixed;
+   
+   /* Prendre toute la fenètre avec background */
+    background-size: cover;
+   
+    color: #fff;
+    margin: 0 auto;
+    font-family: 'New Tegomin', serif;
+}
+/* overlay */
+/* position absolue car se fait en fonction des coordonnées */
+.overlay{
+position: absolute;
+bottom: 0; 
+left: 0;
+right: 0;
+background-color: #373737;
+overflow:hidden;
+width: 100%;
+height:0;
+transition: 0.5s all;
+}
+
+.overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 20px;
+    height: 600px;
+    
+}
+header h1{
+    font-size: 50px;
+}
+header span{
+    font-size: 20px;
+}
+header img {
+    height: 300px;
+}
+
+
+/* a propos */
+
+section#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-left: calc(15px + 15px);
+   margin-right: calc(15px + 15px);
+    padding: 20px  20% 0 20%;
+    font-size: 20px;
+}
+
+#about div {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* prendre tous les espaces disponibles flexbox */
+    flex: 1;
+}
+
+/* Les images */
+.opening { background: url(../images/1.jpg); }
+.mention { background: url(../images/2.jpg); }
+.cocktails { background: url(../images/3.jpg); }
+
+
+/* HappyHour */
+#HappyHour{
+
+padding: 20px  20% 20px 20%;
+background: url(../images/cocktail-section.jpg);
+}
+#HappyHour img{
+    height: 200px;
+}
+
+/* Afficher deux éléments sur une même ligne */
+
+.first-row{
+    display: flex;
+   
+}
+
+.second-row{
+    display:flex;
+    
+}
+
+.col-3 { flex: 0.333; }
+.col-2 { flex: 0.5; }
+
+.cocktail-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:25px;
+    height: 300px;  
+    position: relative;
+    padding: 10px;
+}
+.cocktail-item img{
+    height: 120px;
+}
+
+ /* Propriété au survol  utilisation hover*/
+
+ .cocktail-item p{
+     font-size:20px;
+     text-decoration-line:underline;
+    
+ }
+.cocktail-item h4{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.cocktail-item:hover .overlay{
+   height: 100%; 
+   padding: 15px;
+}
+
+.Sunmoon{
+    background: url(../images/orange-banner.jpg);
+}
+.Mentalux{
+    background:url(../images/mentalux-banner.jpg);
+}
+.Cocowhip{
+    background: url(../images/coco-banner.jpg);
+}
+
+.Citrinus{
+    background: url(../images/citrinus-banner.jpg);
+}
+.Spicherry{
+    background: url(../images/cherry-banner.jpg);
+}
+
+/* footer */
+footer{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
